@@ -1,0 +1,11 @@
+# getting base image ubuntu
+
+FROM ubuntu
+
+MAINTAINER SHAIK AFZALAHMED <skafzalahmed2415@gmail.com
+
+RUN  cache madison docker-ce
+
+CMD [" sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io"]
+
+
